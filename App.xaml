@@ -1,0 +1,9 @@
+﻿<Application x:Class="morelli.giovanni._4h.ReadCSV.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:morelli.giovanni._4h.ReadCSV"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
