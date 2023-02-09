@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace morelli.giovanni._4h.ReadCSV
 {
-    class Class1
+    public class Utente
     {
-    }
+        public string Nome { get; set; }
+        public string Cognome { get; set; }
+        public string Email { get; set; }
+}
 }

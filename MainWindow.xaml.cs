@@ -24,12 +24,14 @@ namespace morelli.giovanni._4h.ReadCSV
         public MainWindow()
         {
             InitializeComponent();
+            Utente u = new();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            List<Utente> valori = new List<Utente>();
+            List<Utente> utenti = new List<Utente>();
+            int x = 0;
 
             try
             {
@@ -42,6 +44,7 @@ namespace morelli.giovanni._4h.ReadCSV
                     string[] colonne = str.Split(";");
                     Utente u = new Utente { Nome = colonne[0], Cognome = colonne[1], Email = colonne[2] };
                     utenti.Add(u);
+                    x++;
                 }
 
             }
@@ -53,7 +56,7 @@ namespace morelli.giovanni._4h.ReadCSV
         }
 
        
-        private void dgDati_LoadingRow(object sender, RoutedEventArgs e) 
+       private void dgDati_LoadingRow(object sender, RoutedEventArgs e) 
         { 
 
         } 
